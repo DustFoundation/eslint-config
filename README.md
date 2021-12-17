@@ -7,7 +7,7 @@ Shared **ESLint config** for Dust Foundation projects.
 Install via npm:
 
 ```sh
-npm install --save-dev github:dustfoundation/eslint-config
+npm install --save-dev github:dustfoundation/eslint-config#v0.0.2
 ```
 
 ---

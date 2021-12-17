@@ -1,13 +1,13 @@
 {
   "name": "@dustfoundation/eslint-config",
-  "version": "1.0.0",
+  "version": "0.0.2",
   "description": "Shared ESLint config for Dust Foundation projects",
   "repository": "https://github.com/DustFoundation/eslint-config",
   "main": ".eslintrc.json",
   "files": [".eslintrc.json"],
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": "^5.6.0",
-    "@typescript-eslint/parser": "^5.6.0",
+    "@typescript-eslint/eslint-plugin": "^5.7.0",
+    "@typescript-eslint/parser": "^5.7.0",
     "eslint": "^8.4.1",
     "eslint-config-google": "^0.14.0",
     "eslint-config-prettier": "^8.3.0",
