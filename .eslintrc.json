@@ -47,6 +47,14 @@
         "exceptAfterSingleLine": true
       }
     ],
+    "padding-line-between-statements": [
+      "warn",
+      {
+        "blankLine": "always",
+        "prev": "import",
+        "next": "export"
+      }
+    ],
     "no-empty": "off",
     "require-jsdoc": "off",
     "max-len": "off",
