@@ -4,14 +4,17 @@
   "description": "Shared ESLint config for Dust Foundation projects",
   "repository": "https://github.com/DustFoundation/eslint-config",
   "main": ".eslintrc.json",
-  "files": [".eslintrc.json"],
+  "files": [
+    ".eslintrc.json"
+  ],
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": "^5.7.0",
-    "@typescript-eslint/parser": "^5.7.0",
-    "eslint": "^8.4.1",
+    "@typescript-eslint/eslint-plugin": "^5.8.1",
+    "@typescript-eslint/parser": "^5.8.1",
+    "eslint": "^8.5.0",
     "eslint-config-google": "^0.14.0",
     "eslint-config-prettier": "^8.3.0",
-    "eslint-plugin-prettier": "^4.0.0"
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-unicorn": "^39.0.0"
   },
   "engines": {
     "node": ">=14"
