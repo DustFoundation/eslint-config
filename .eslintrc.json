@@ -52,7 +52,6 @@
     "unicorn/prefer-math-trunc": "warn",
     "unicorn/prefer-node-protocol": "warn",
     "unicorn/prefer-number-properties": "warn",
-    "unicorn/prefer-object-from-entries": "warn",
     "unicorn/prefer-spread": "warn",
     "unicorn/prefer-string-slice": "warn",
     "unicorn/require-number-to-fixed-digits-argument": "warn",
@@ -91,6 +90,7 @@
         "next": "export"
       }
     ],
+    "guard-for-in": "off",
     "no-empty": "off",
     "require-jsdoc": "off",
     "max-len": "off",
