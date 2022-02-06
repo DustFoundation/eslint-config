@@ -17,7 +17,7 @@ jobs:
         id: version
         uses: paulhatch/semantic-version@v4.0.2
         with:
-          short_tags: true
+          short_tags: false
 
       - name: Create Release
         id: create_release

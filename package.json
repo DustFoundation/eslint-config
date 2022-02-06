@@ -1,6 +1,6 @@
 {
   "name": "@dustfoundation/eslint-config",
-  "version": "0.0.5",
+  "version": "1.0.0",
   "description": "Shared ESLint config for Dust Foundation projects",
   "repository": "https://github.com/DustFoundation/eslint-config",
   "main": ".eslintrc.json",
