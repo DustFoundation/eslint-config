@@ -76,13 +76,6 @@
         }
       }
     ],
-    "lines-between-class-members": [
-      "warn",
-      "always",
-      {
-        "exceptAfterSingleLine": true
-      }
-    ],
     "padding-line-between-statements": [
       "warn",
       {
