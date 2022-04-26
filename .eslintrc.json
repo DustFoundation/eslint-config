@@ -1,7 +1,6 @@
 {
   "env": {
     "es6": true,
-    "es2020": true,
     "node": true
   },
   "extends": [
@@ -112,6 +111,15 @@
     "max-len": "off",
     "new-cap": "off",
     "valid-jsdoc": "off",
+    "no-implicit-coercion": [
+      "warn",
+      {
+        "boolean": false,
+        "number": true,
+        "string": false,
+        "disallowTemplateShorthand": false
+      }
+    ],
     "lines-between-class-members": [
       "warn",
       "always",
@@ -233,7 +241,12 @@
     "unicorn/text-encoding-identifier-case": "error",
     "unicorn/throw-new-error": "error",
     "@typescript-eslint/adjacent-overload-signatures": "error",
-    "@typescript-eslint/array-type": "off",
+    "@typescript-eslint/array-type": [
+      "warn",
+      {
+        "default": "array-simple"
+      }
+    ],
     "@typescript-eslint/ban-ts-comment": "off",
     "@typescript-eslint/ban-types": "error",
     "@typescript-eslint/explicit-module-boundary-types": [
