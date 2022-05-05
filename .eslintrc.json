@@ -1,27 +1,20 @@
 {
   "env": {
+    // TODO: Set es2022: true when targeting Node.js 16.
     "es6": true,
     "node": true
   },
-  "extends": [
-    "plugin:prettier/recommended"
-  ],
+  "extends": ["plugin:prettier/recommended"],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
+    // TODO: Set 2020 when targeting Node.js 16.
     "ecmaVersion": 2020,
     "sourceType": "module"
   },
-  "plugins": [
-    "@typescript-eslint",
-    "prettier",
-    "unicorn"
-  ],
+  "plugins": ["@typescript-eslint", "prettier", "unicorn"],
   "overrides": [
     {
-      "files": [
-        "*.ts",
-        "*.tsx"
-      ],
+      "files": ["*.ts", "*.tsx"],
       "rules": {
         "constructor-super": "off", // ts(2335) & ts(2377)
         "getter-return": "off", // ts(2378)
@@ -44,6 +37,12 @@
         "prefer-rest-params": "error", // ts provides better types with rest args over arguments
         "prefer-spread": "error", // ts transpiles spread to apply, so no need for manual apply
         "valid-typeof": "off" // ts(2367)
+      }
+    },
+    {
+      "files": ["*.test.ts"],
+      "rules": {
+        "unicorn/no-useless-undefined": "off"
       }
     }
   ],
@@ -112,7 +111,7 @@
     "new-cap": "off",
     "valid-jsdoc": "off",
     "no-implicit-coercion": [
-      "warn",
+      "error",
       {
         "boolean": false,
         "number": true,
@@ -138,7 +137,7 @@
     "unicorn/consistent-destructuring": "off",
     "unicorn/consistent-function-scoping": "off",
     "unicorn/custom-error-definition": "off",
-    "unicorn/empty-brace-spaces": "error",
+    "unicorn/empty-brace-spaces": "off",
     "unicorn/error-message": "off",
     "unicorn/escape-case": "error",
     "unicorn/expiring-todo-comments": "off",
@@ -151,7 +150,6 @@
         }
       }
     ],
-    "unicorn/import-index": "off",
     "unicorn/import-style": "error",
     "unicorn/new-for-builtins": "error",
     "unicorn/no-abusive-eslint-disable": "off",
@@ -163,7 +161,7 @@
     "unicorn/no-await-expression-member": "off",
     "unicorn/no-console-spaces": "error",
     "unicorn/no-document-cookie": "error",
-    "unicorn/no-empty-file": "off",
+    "unicorn/no-empty-file": "error",
     "unicorn/no-for-loop": "off",
     "unicorn/no-hex-escape": "error",
     "unicorn/no-instanceof-array": "error",
@@ -176,17 +174,19 @@
     "unicorn/no-new-buffer": "error",
     "unicorn/no-null": "off",
     "unicorn/no-object-as-default-parameter": "off",
-    "unicorn/no-process-exit": "off",
+    "unicorn/no-process-exit": "error",
     "unicorn/no-static-only-class": "off",
     "unicorn/no-thenable": "error",
     "unicorn/no-this-assignment": "error",
     "unicorn/no-unreadable-array-destructuring": "off",
+    "unicorn/no-unreadable-iife": "off",
     "unicorn/no-unsafe-regex": "off",
     "unicorn/no-unused-properties": "off",
     "unicorn/no-useless-fallback-in-spread": "error",
     "unicorn/no-useless-length-check": "error",
     "unicorn/no-useless-promise-resolve-reject": "error",
     "unicorn/no-useless-spread": "error",
+    "unicorn/no-useless-switch-case": "off",
     "unicorn/no-useless-undefined": "error",
     "unicorn/no-zero-fractions": "error",
     "unicorn/number-literal-case": "error",
@@ -197,6 +197,7 @@
     "unicorn/prefer-array-flat-map": "error",
     "unicorn/prefer-array-index-of": "error",
     "unicorn/prefer-array-some": "error",
+    // TODO: Enable this by default when targeting Node.js 16.
     "unicorn/prefer-at": "off",
     "unicorn/prefer-code-point": "error",
     "unicorn/prefer-date-now": "error",
@@ -207,11 +208,13 @@
     "unicorn/prefer-dom-node-text-content": "error",
     "unicorn/prefer-export-from": "error",
     "unicorn/prefer-includes": "error",
-    "unicorn/prefer-json-parse-buffer": "error",
+    "unicorn/prefer-json-parse-buffer": "off",
     "unicorn/prefer-keyboard-event-key": "error",
     "unicorn/prefer-math-trunc": "error",
     "unicorn/prefer-modern-dom-apis": "error",
+    "unicorn/prefer-modern-math-apis": "error",
     "unicorn/prefer-module": "off",
+    "unicorn/prefer-native-coercion-functions": "off",
     "unicorn/prefer-negative-index": "off",
     "unicorn/prefer-node-protocol": "error",
     "unicorn/prefer-number-properties": "error",
@@ -223,7 +226,8 @@
     "unicorn/prefer-regexp-test": "off",
     "unicorn/prefer-set-has": "off",
     "unicorn/prefer-spread": "error",
-    "unicorn/prefer-string-replace-all": "error",
+    // TODO: Enable this by default when targeting Node.js 16.
+    "unicorn/prefer-string-replace-all": "off",
     "unicorn/prefer-string-slice": "error",
     "unicorn/prefer-string-starts-ends-with": "error",
     "unicorn/prefer-string-trim-start-end": "error",
@@ -249,14 +253,26 @@
     ],
     "@typescript-eslint/ban-ts-comment": "off",
     "@typescript-eslint/ban-types": "error",
-    "@typescript-eslint/explicit-module-boundary-types": [
+    // "@typescript-eslint/explicit-module-boundary-types": [
+    //   "warn",
+    //   {
+    //     "allowArgumentsExplicitlyTypedAsAny": true,
+    //     "allowDirectConstAssertionInArrowFunctions": true,
+    //     "allowedNames": [],
+    //     "allowHigherOrderFunctions": true,
+    //     "allowTypedFunctionExpressions": true
+    //   }
+    // ],
+    "@typescript-eslint/explicit-module-boundary-types": "off",
+    "@typescript-eslint/explicit-function-return-type": [
       "warn",
       {
-        "allowArgumentsExplicitlyTypedAsAny": true,
-        "allowDirectConstAssertionInArrowFunctions": true,
-        "allowedNames": [],
+        "allowExpressions": true,
+        "allowTypedFunctionExpressions": true,
         "allowHigherOrderFunctions": true,
-        "allowTypedFunctionExpressions": true
+        "allowDirectConstAssertionInArrowFunctions": true,
+        "allowConciseArrowFunctionExpressionsStartingWithVoid": false,
+        "allowedNames": []
       }
     ],
     "@typescript-eslint/explicit-member-accessibility": [
