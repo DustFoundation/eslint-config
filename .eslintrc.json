@@ -1,14 +1,12 @@
 {
   "env": {
-    // TODO: Set es2022: true when targeting Node.js 16.
-    "es6": true,
+    "es2022": true,
     "node": true
   },
   "extends": ["plugin:prettier/recommended"],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
-    // TODO: Set 2020 when targeting Node.js 16.
-    "ecmaVersion": 2020,
+    "ecmaVersion": 2022,
     "sourceType": "module"
   },
   "plugins": ["@typescript-eslint", "prettier", "unicorn"],
@@ -191,8 +189,7 @@
     "unicorn/prefer-array-flat-map": "error",
     "unicorn/prefer-array-index-of": "error",
     "unicorn/prefer-array-some": "error",
-    // TODO: Enable this by default when targeting Node.js 16.
-    "unicorn/prefer-at": "off",
+    "unicorn/prefer-at": "error",
     "unicorn/prefer-code-point": "error",
     "unicorn/prefer-date-now": "error",
     "unicorn/prefer-default-parameters": "error",
@@ -220,8 +217,7 @@
     "unicorn/prefer-regexp-test": "off",
     "unicorn/prefer-set-has": "off",
     "unicorn/prefer-spread": "error",
-    // TODO: Enable this by default when targeting Node.js 16.
-    "unicorn/prefer-string-replace-all": "off",
+    "unicorn/prefer-string-replace-all": "error",
     "unicorn/prefer-string-slice": "error",
     "unicorn/prefer-string-starts-ends-with": "error",
     "unicorn/prefer-string-trim-start-end": "error",
