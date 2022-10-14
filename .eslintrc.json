@@ -170,6 +170,7 @@
     "unicorn/no-static-only-class": "off",
     "unicorn/no-thenable": "error",
     "unicorn/no-this-assignment": "error",
+    "unicorn/no-unnecessary-await": "error",
     "unicorn/no-unreadable-array-destructuring": "off",
     "unicorn/no-unreadable-iife": "off",
     "unicorn/no-unsafe-regex": "off",
@@ -201,6 +202,7 @@
     "unicorn/prefer-includes": "error",
     "unicorn/prefer-json-parse-buffer": "off",
     "unicorn/prefer-keyboard-event-key": "error",
+    "unicorn/prefer-logical-operator-over-ternary": "error",
     "unicorn/prefer-math-trunc": "error",
     "unicorn/prefer-modern-dom-apis": "error",
     "unicorn/prefer-modern-math-apis": "error",
@@ -231,6 +233,7 @@
     "unicorn/require-number-to-fixed-digits-argument": "error",
     "unicorn/require-post-message-target-origin": "off",
     "unicorn/string-content": "off",
+    "unicorn/switch-case-braces": "warn",
     "unicorn/template-indent": "off",
     "unicorn/text-encoding-identifier-case": "error",
     "unicorn/throw-new-error": "error",
@@ -243,16 +246,6 @@
     ],
     "@typescript-eslint/ban-ts-comment": "off",
     "@typescript-eslint/ban-types": "error",
-    // "@typescript-eslint/explicit-module-boundary-types": [
-    //   "warn",
-    //   {
-    //     "allowArgumentsExplicitlyTypedAsAny": true,
-    //     "allowDirectConstAssertionInArrowFunctions": true,
-    //     "allowedNames": [],
-    //     "allowHigherOrderFunctions": true,
-    //     "allowTypedFunctionExpressions": true
-    //   }
-    // ],
     "@typescript-eslint/explicit-module-boundary-types": "off",
     "@typescript-eslint/explicit-function-return-type": [
       "warn",

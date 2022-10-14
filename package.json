@@ -1,19 +1,19 @@
 {
   "name": "@dustfoundation/eslint-config",
   "version": "2.5.0",
-  "description": "Shared ESLint config for Dust Foundation projects",
+  "description": "Node.js shared config for ESLint",
   "repository": "https://github.com/DustFoundation/eslint-config",
   "main": ".eslintrc.json",
   "files": [
     ".eslintrc.json"
   ],
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": "^5.26.0",
-    "@typescript-eslint/parser": "^5.26.0",
-    "eslint": "^8.16.0",
+    "@typescript-eslint/eslint-plugin": "^5.40.0",
+    "@typescript-eslint/parser": "^5.40.0",
+    "eslint": "^8.25.0",
     "eslint-config-prettier": "^8.5.0",
-    "eslint-plugin-prettier": "^4.0.0",
-    "eslint-plugin-unicorn": "^42.0.0"
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-unicorn": "^44.0.2"
   },
   "engines": {
     "node": ">=16"
